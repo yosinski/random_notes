@@ -1,8 +1,8 @@
-Building Bazel with local GCC (not in /usr/bin/gcc):
+Building Bazel using a local gcc (gcc at a path other than /usr/bin/gcc). Needed to build bazel to be able to build tensorflow.
 
 Useful reference: https://github.com/bazelbuild/bazel/issues/629
 
-Diffs in `tools/cpp/CROSSTOOL` (only required in the `target_cpu: "local"` section):
+Minimal diffs in `tools/cpp/CROSSTOOL` (only required in the `target_cpu: "local"` section):
 
 ```
 [~/s/bazel] $ gdf
